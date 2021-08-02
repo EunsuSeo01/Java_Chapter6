@@ -1,5 +1,5 @@
 /**
- * 생성자 안에서 (같은 클래스 내의)다른 생성자를 호출하는 예제.
+ * 생성자 this()를 사용하여 생성자 안에서 (같은 클래스 내의)다른 생성자를 호출하는 예제.
  * @author user EunSu Seo
  * last modified 2021-08-02
  */
@@ -16,8 +16,8 @@ class Car2 {	// Car2클래스.
 		this(color, "auto", 4);		// Car(String color, String gearType, int door) 생성자를 호출하는 것.
 	}
 	Car2(String color, String gearType, int door) {
-		this.color = color;
-		this.gearType = gearType;
+		this.color = color;		// 인스턴스 자신을 가리키는 참조변수 this를 이용. this.이 붙은 것은 인스턴스 변수를 나타냄.
+		this.gearType = gearType;	// 인스턴스변수 = 지역변수;
 		this.door = door;
 	}
 }

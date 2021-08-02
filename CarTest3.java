@@ -1,5 +1,5 @@
 /**
- * 
+ * 생성자를 이용하여 인스턴스의 복사를 보여준 예제.
  * @author user EunSu Seo
  * last modified 2021-08-02
  */
