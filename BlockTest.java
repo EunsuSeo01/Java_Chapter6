@@ -8,6 +8,7 @@ public class BlockTest {
 	static {
 		System.out.println("클래스 초기화 블럭. static { }");
 	}
+	
 	// 인스턴스 초기화 블럭. -> 인스턴스가 생성될 때마다 수행됨.
 	{
 		System.out.println("인스턴스 초기화 블럭. { }");
@@ -17,6 +18,7 @@ public class BlockTest {
 	BlockTest() {
 		System.out.println("생성자.");
 	}
+	
 	public static void main(String[] args) {
 		System.out.println("BlockTest bt = new BlockTest(); ");
 		BlockTest bt = new BlockTest();		// 인스턴스 생성. -> 인스턴스 초기화 블럭이 먼저 수행되고, 생성자가 그 다음에 수행됨!
