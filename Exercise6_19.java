@@ -7,6 +7,8 @@ public class Exercise6_19 {
 	public static void change(String str) {
 		str += "456";	// 이 지역변수 str에 들어간 주소값은 main메서드 안의 str의 주소값과는 다르다. -> 새 공간의 주소값.
 						// 값을 변경할 수 없으니까 아예 새 공간을 만들어서 거기에 "ABC123456"을 저장해버린 것임.
+						// "문자열은 내용을 변경할 수 없기 때문에 덧셈연산을 하면
+						// 새로운 문자열이 생성되고 새로운 문자열의 주소가 변수 str에 저장된다."
 	}
 	public static void main(String[] args) {
 		String str = new String("ABC123");

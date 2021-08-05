@@ -40,5 +40,6 @@ class Student {
 		// 평균 * 10 하면 78.67... 이 786.7...이 돼서 Math.round()의 인자로 넣으면 원래 둘째자리였던 7이 반올림 돼서 787로 됨.
 		// 그걸 원래대로 나누기 10 해서 78.7로 만든 것.
 		return (float) Math.round((float) getTotal() / 3 * 10) / 10;
+		// return (int)((getTotal() / 3f * 10 + 0.5f) / 10f; 
 	}
 }

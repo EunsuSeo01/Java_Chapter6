@@ -16,8 +16,9 @@ class MyTv {
 	// TV를 켜는 메서드.
 	void turnOnOff() {
 		// isPowerOn의 값이 true면 false로, false면 true로 바꾼다.
-		if (isPowerOn) isPowerOn = false;
-		else isPowerOn = true;
+		// if (isPowerOn) isPowerOn = false;
+		// else isPowerOn = true;
+		isPowerOn = !isPowerOn;		// 이렇게 더 간단하게 가능.
 	}
 	
 	void volumeUp() {

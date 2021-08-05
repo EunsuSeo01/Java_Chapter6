@@ -18,8 +18,9 @@ class SutdaCard {
 	boolean isKwang;
 	
 	SutdaCard() {
-		num = 1;
-		isKwang = true;
+		// num = 1;
+		// isKwang = true;
+		this(1, true);		// 이렇게 더 간단하게 할 수 있음.
 	}
 	SutdaCard(int num, boolean isKwang) {
 		this.num = num;
@@ -27,8 +28,11 @@ class SutdaCard {
 	}
 	
 	String info() {
+		// 삼항연산자로 처리하기> 조건문 ? 참일 때 : 거짓일 때;
+		// return num + ((isKwang) ? "K" : "");
 		if(this.isKwang)
 			return this.num + "K";
 		return this.num + "";
+		// 변수 num은 int이지만 문자열과 덧셈연산을 하기 때문에 최종적으로는 문자열을 반환하게 된다.
 	}
 }
